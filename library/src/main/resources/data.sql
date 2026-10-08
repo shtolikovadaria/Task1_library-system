@@ -1,0 +1,6 @@
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Война и мир', 'Эксмо', '2026-09-01', 'Иванов Иван Алексеевич', '2026-09-20');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Преступление и наказание', 'АСТ', '2026-09-10', 'Петров Петр Сергеевич', '2026-09-25');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Мастер и Маргарита', 'Азбука', '2026-09-15', 'Сидорова Анна Дмитриевна', NULL);
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Совершенный код', 'Питер', '2026-09-20', 'Смирнов Алексей Владимирович', NULL);
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Анна Каренина', 'Эксмо', '2026-10-01', 'Кузнецова Елена Игоревна', '2026-10-05');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('1984', 'АСТ', '2026-10-03', 'Морозов Дмитрий Игоревич', NULL);
