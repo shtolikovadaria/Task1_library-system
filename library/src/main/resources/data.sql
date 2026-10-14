@@ -4,3 +4,9 @@ INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALU
 INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Совершенный код', 'Питер', '2026-09-20', 'Смирнов Алексей Владимирович', NULL);
 INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Анна Каренина', 'Эксмо', '2026-10-01', 'Кузнецова Елена Игоревна', '2026-10-05');
 INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('1984', 'АСТ', '2026-10-03', 'Морозов Дмитрий Игоревич', NULL);
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Война и мир', 'Эксмо', '2026-09-10', 'Петров Петр Сергеевич', '2026-09-28');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Чистый код', 'Питер', '2026-09-20', 'Иванов Иван Алексеевич', NULL);
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('1984', 'АСТ', '2026-10-01', 'Сидорова Анна Дмитриевна', '2026-10-06');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Мастер и Маргарита', 'Азбука', '2026-10-03', 'Кузнецова Елена Игоревна', NULL);
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES ('Преступление и наказание', 'АСТ', '2026-10-03', 'Смирнов Алексей Владимирович', '2026-10-07');
+INSERT INTO books (title, publisher, issue_date, student_name, return_date) VALUES (NULL, 'АСТ', '2026-10-01', 'Смирнов Алексей Владимирович', NULL);

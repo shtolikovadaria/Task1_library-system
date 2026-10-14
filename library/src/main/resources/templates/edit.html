@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование книги</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/books">
+            <i class="bi bi-journal-bookmark-fill me-2"></i>Информационная система «Библиотека»
+        </a>
+        <span class="navbar-text text-white-50 fs-6">Вариант У–Я</span>
+    </div>
+</nav>
+
+<div class="container pb-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-white py-3">
+            <h5 class="card-title mb-0 text-primary">
+                <i class="bi bi-pencil-square me-2"></i>Редактирование записи № <span th:text="${book.id}"></span>
+            </h5>
+        </div>
+        <div class="card-body">
+            <form th:action="@{/books/edit/{id}(id=${book.id})}" th:object="${book}" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label text-muted small mb-1">Название книги</label>
+                    <input type="text" th:field="*{title}" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small mb-1">Издательство</label>
+                    <input type="text" th:field="*{издательство}" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label text-muted small mb-1">Дата выдачи</label>
+                    <input type="date" th:field="*{issueDate}" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small mb-1">ФИО Студента</label>
+                    <input type="text" th:field="*{studentName}" class="form-control" required>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label text-muted small mb-1">Дата сдачи</label>
+                    <input type="date" th:field="*{returnDate}" class="form-control">
+                </div>
+                <div class="col-12 mt-3 text-end">
+                    <a href="/books" class="btn btn-light border me-2">Отмена</a>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-check-lg me-1"></i> Сохранить изменения
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
